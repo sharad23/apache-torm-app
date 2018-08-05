@@ -1,0 +1,1 @@
+streamparse==3.9.0 # always required for streamparse projects

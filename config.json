@@ -1,0 +1,21 @@
+{
+    "serializer": "json",
+    "topology_specs": "topologies/",
+    "virtualenv_specs": "virtualenvs/",
+    "envs": {
+        "prod": {
+            "user": "root",
+            "ssh_password": "wurstmeister",
+            "nimbus": "172.17.0.4",
+            "workers": ["172.17.0.6"],
+            "log": {
+                "path": "",
+                "max_bytes": 1000000,
+                "backup_count": 10,
+                "level": "info"
+            },
+            "virtualenv_root": "/data/virtualenvs",
+            "use_ssh_for_nimbus" : true
+        }
+    }
+}
